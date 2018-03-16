@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<process nodesIndex="18" linesIndex="15" recalculateHandler="true"
+	rejectReturn="false" notifyType="todo" notifyOnFinish="true"
+	notifyDraftOnFinish="true" dayOfNotifyPrivileger="15">
+	<nodes>
+		<startNode id="N1" name="开始节点" x="300" y="40">
+			<advice CHILDRENISARRAY="false">
+				<before />
+				<after />
+			</advice>
+		</startNode>
+		
+		<draftNode id="N2" name="起草节点" x="298" y="97">
+			<advice CHILDRENISARRAY="false">
+				<before />
+				<after />
+			</advice>
+		</draftNode>
+		
+		<endNode id="N3" name="结束节点" x="306" y="601">
+			<advice CHILDRENISARRAY="false">
+				<before />
+				<after />
+			</advice>
+		</endNode>
+	</nodes>
+	<lines>
+		<line id="L1" startPosition="3" endPosition="1" startNodeId="N1"
+			endNodeId="N2" points="365,82;365,97">
+			<textPos x="0" y="0" />
+		</line>
+		<line id="L2" startPosition="3" endPosition="1" startNodeId="N2"
+			endNodeId="N7" points="363,139;362,157">
+			<textPos x="0" y="0" />
+		</line>
+		<line id="L5" startPosition="3" endPosition="1" startNodeId="N7"
+			endNodeId="N14" points="427,178;509,178">
+			<textPos x="0" y="0" />
+		</line>
+		<line id="L7" startPosition="3" endPosition="1" startNodeId="N9"
+			endNodeId="N13" points="600,294;438,290">
+			<textPos x="0" y="0" />
+		</line>
+		<line id="L8" startPosition="3" endPosition="1" startNodeId="N11"
+			endNodeId="N15" points="371,385;371,396">
+			<textPos x="0" y="0" />
+		</line>
+		<line id="L9" startPosition="3" endPosition="1" startNodeId="N13"
+			endNodeId="N11" points="372,310;371,343">
+			<textPos x="0" y="0" />
+		</line>
+		<line id="L10" startPosition="3" endPosition="1" startNodeId="N14"
+			endNodeId="N9" name="不" points="579,212;644,274" disCondition="1!=1"
+			condition="1!=1" endNodeName="审批节点2(N9)" priority="1">
+			<textPos x="0" y="0" />
+		</line>
+		<line id="L11" startPosition="3" endPosition="1" startNodeId="N14"
+			endNodeId="N13" name="走" points="509,201;405,268" disCondition="1!=0"
+			condition="1!=0" endNodeName="审批节点1(N13)" priority="0">
+			<textPos x="0" y="0" />
+		</line>
+		<line id="L12" startPosition="3" endPosition="1" startNodeId="N15"
+			endNodeId="N16" points="371,438;370,461">
+			<textPos x="0" y="0" />
+		</line>
+		<line id="L13" startPosition="3" endPosition="1" startNodeId="N16"
+			endNodeId="N3" points="371,531;372,601">
+			<textPos x="0" y="0" />
+		</line>
+		<line id="L14" startPosition="3" endPosition="1" startNodeId="N16"
+			endNodeId="N18" points="405,495;450,494">
+			<textPos x="0" y="0" />
+		</line>
+		<line id="L15" startPosition="3" endPosition="1" startNodeId="N18"
+			endNodeId="N3" points="493,514;395,601">
+			<textPos x="0" y="0" />
+		</line>
+	</lines>
+</process>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<betwixt-config>
+	<class name="com.parse.model.NodeDetail">
+		<element name="node">
+			<addDefaults add-properties="true" add-adders="false" />
+		</element>
+	</class>
+	
+	<class name="com.parse.model.LineDetail">
+		<element name="line">
+			<addDefaults add-properties="true" add-adders="false" />
+		</element>
+	</class>
+	
+	<class name="com.parse.model.ProcessDetail">
+		<element name="process">
+			<element name="nodes">
+				<element property="nodes" updater="addNode" />
+			</element>
+			
+			<element name="lines">
+				<element property="lines" updater="addLine" />
+			</element>
+			<addDefaults add-properties="true" add-adders="false" />
+		</element>
+	</class>
+</betwixt-config>

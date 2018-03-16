@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<betwixt-config>
+	<class name="com.parse.simple.School">
+		<element name="school">
+			<addDefaults add-properties="true" add-adders="false" />
+		</element>
+	</class>
+	
+	<class name="com.parse.simple.Student">
+		<element name="student">
+			<addDefaults add-properties="true" add-adders="false" />
+		</element>
+	</class>
+	
+	<class name="com.parse.simple.Score">
+		<element name="score">
+			<addDefaults />
+		</element>
+	</class>
+</betwixt-config>
